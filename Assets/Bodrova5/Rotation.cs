@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Rotation : SampleScript
+public class Rotation : MonoBehaviour /*SampleScript*/
 {
     private Transform myTransform;
 
@@ -20,7 +20,7 @@ public class Rotation : SampleScript
     }
 
     [ContextMenu("Start test")]
-    public override void Use()
+    public /*override*/ void Use()
     {
         isRotating = true;
     }
